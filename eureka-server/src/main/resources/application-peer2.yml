@@ -1,0 +1,14 @@
+server:
+  port: 1112
+  application:
+    name: register-server
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://peer1:1111/eureka/
+  server:
+    enable-self-preservation: false
